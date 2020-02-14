@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <app-header></app-header>
+
+    <hr style="border-top: 3px solid black;">
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                sfasfasfasfasdfasdfasdfsadfasdf
+            </div>
+
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="../../assets/images/sabyasachi.jpg" style="width: 200px;" height="200px" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <h5>SABYASACHI</h5> <br>
+                        Sabyasachi Mukherjee started his eponymous label in 1999,
+                        with a workforce of three. Today, he retails from five flagship
+                        stores around the country and employs about 1100 people
+                        directly while outsourcing work to another 35000 people.
+                        Every Sabyasachi piece is lovingly, painstakingly and
+                        deliberately created by skilled artisans using the highest
+                        degree of craftsmanship, quality and devotion. <br>
+                        <p>Sign up for updates</p>
+                        <input type="text" placeholder="Enter Email" style="width: 50%;">
+                        <button style="background-color: black;">
+                            <i class="fa fa-angle-right" style="font-size:24px; color: white;"></i>
+                        </button>
+
+                    </div>
+                </div>
+                
+
+                
+                    <div class="row" >
+                        <div class="col-md-4"  *ngFor="let a of users">
+                            <div class="card" style="width: 100%; margin-top: 20px;">
+                                <img style="width: 100%;" class="card-img-top" src="../../assets/images/sabyasachi1.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">{{a.name}}</h5>
+                                  <p class="card-text">{{a.job}}</p>
+                                  <a href="#" class="btn btn-primary">{{a.job}}</a>
+                                </div>
+                              </div>
+                        </div>
+
+
+                    </div>
+                    
+                
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+    <app-footer></app-footer>
+</body>
+
+</html>
